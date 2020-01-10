@@ -12,7 +12,9 @@
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, see <http://www.gnu.org/licenses/>.
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 
 #include <config.h>
@@ -404,7 +406,7 @@ desktop_entry_ref (DesktopEntry *entry)
   g_return_val_if_fail (entry != NULL, NULL);
   g_return_val_if_fail (entry->refcount > 0, NULL);
 
-  entry->refcount += 1;
+  g_atomic_int_inc (&entry->refcount);
 
   return entry;
 }
@@ -697,7 +699,7 @@ desktop_entry_set_ref (DesktopEntrySet *set)
   g_return_val_if_fail (set != NULL, NULL);
   g_return_val_if_fail (set->refcount > 0, NULL);
 
-  set->refcount += 1;
+  g_atomic_int_inc (&set->refcount);
 
   return set;
 }
@@ -705,11 +707,13 @@ desktop_entry_set_ref (DesktopEntrySet *set)
 void
 desktop_entry_set_unref (DesktopEntrySet *set)
 {
+  gboolean is_zero;
+
   g_return_if_fail (set != NULL);
   g_return_if_fail (set->refcount > 0);
 
-  set->refcount -= 1;
-  if (set->refcount == 0)
+  is_zero = g_atomic_int_dec_and_test (&set->refcount);
+  if (is_zero)
     {
       menu_verbose (" Deleting entry set %p\n", set);
 

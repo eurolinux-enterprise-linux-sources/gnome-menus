@@ -12,7 +12,9 @@
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public
- * License along with this library; if not, see <http://www.gnu.org/licenses/>.
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
  */
 
 #include <config.h>
@@ -1240,8 +1242,12 @@ gmenu_tree_directory_make_path (GMenuTreeDirectory *directory,
   append_directory_path (directory, path);
 
   if (entry != NULL)
-    g_string_append (path,
-		     desktop_entry_get_basename (entry->desktop_entry));
+    {
+      const char *basename;
+
+      basename = desktop_entry_get_basename (entry->desktop_entry);
+      g_string_append (path, basename);
+    }
 
   return g_string_free (path, FALSE);
 }
@@ -1271,7 +1277,7 @@ gmenu_tree_entry_get_desktop_file_path (GMenuTreeEntry *entry)
 const char *
 gmenu_tree_entry_get_desktop_file_id (GMenuTreeEntry *entry)
 {
-  g_return_val_if_fail (entry != NULL, NULL);
+  g_return_val_if_fail (entry != NULL, FALSE);
 
   return entry->desktop_file_id;
 }

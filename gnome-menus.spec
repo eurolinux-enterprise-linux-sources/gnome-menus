@@ -2,19 +2,14 @@
 
 Summary:  A menu system for the GNOME project
 Name: gnome-menus
-Version: 3.13.3
-Release: 3%{?dist}
+Version: 3.8.1
+Release: 1%{?dist}
 License: LGPLv2+
 Group: System Environment/Libraries
 URL: http://www.gnome.org/
 
 #VCS: git:git://git.gnome.org/gnome-menus
-Source0: http://download.gnome.org/sources/gnome-menus/3.13/%{name}-%{version}.tar.xz
-
-# tweak menu layout for classic mode
-Patch0: classic-mode-menu-tweaks.patch
-Patch1: fix-multiple-desktops-in-xdg-current-desktop.patch
-
+Source0: http://download.gnome.org/sources/gnome-menus/3.8/%{name}-%{version}.tar.xz
 # https://bugzilla.gnome.org/show_bug.cgi?id=696816
 Requires:  redhat-menus
 BuildRequires: gawk
@@ -34,7 +29,7 @@ Python bindings, and a simple menu editor.
 %package devel
 Summary: Libraries and include files for the GNOME menu system
 Group: Development/Libraries
-Requires: %{name}%{?_isa} = %{version}-%{release}
+Requires: %{name} = %{version}-%{release}
 
 %description devel
 This package provides the necessary development libraries for
@@ -42,8 +37,6 @@ writing applications that use the GNOME menu system.
 
 %prep
 %setup -q
-%patch0 -p1 -b .classic
-%patch1 -p1 -b .fix-xdg-current-desktop-handling
 
 %build
 %configure --disable-static \
@@ -81,29 +74,6 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %{_datadir}/gir-1.0/GMenu-3.0.gir
 
 %changelog
-* Wed Jun 17 2015 Florian Müllner <fmuellner@redhat.com> - 3.13.3-3
-- Fix handling of multiple desktops in XDG_CURRENT_DESKTOP
-  Resolves: #1232249
-
-* Fri May 22 2015 Florian Müllner <fmuellner@redhat.com> - 3.13.3-1
-- Drop accidentally re-added python dependency
-  Resolves: #1174388
-
-* Sun Aug 10 2014 Kalev Lember <kalevlember@gmail.com> - 3.13.3-1
-- Update to 3.13.3
-- Tighten -devel deps
-- Resolves: #1174388
-
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.8.1-4
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.1-3
-- Mass rebuild 2013-12-27
-
-* Mon Dec  9 2013 Matthias Clasen <mclasen@redhat.com> - 3.8.1-2
-- Improve menu layout for classic mode
-- Resolves: #1037839
-
 * Thu Oct 24 2013 Jasper St. Pierre <jstpierre@mecheye.net> 3.8.1-1
 - Update to 3.8.1
   Resolves #1019974
