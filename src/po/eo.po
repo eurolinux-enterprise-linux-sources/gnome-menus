@@ -1,0 +1,305 @@
+# Esperanto translation for gnome-menus
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the gnome-menus package.
+#
+# Joop EGGEN <joop_eggen@yahoo.de>, 2006
+# Guillaume SAVATON <llumeao@tuxfamily.org>, 2006
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010.
+# Ryan Lortie <desrt@desrt.ca>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-11 23:40+0200\n"
+"PO-Revision-Date: 2013-08-11 23:43+0200\n"
+"Last-Translator: Ryan Lortie <desrt@desrt.ca>\n"
+"Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../desktop-directories/AudioVideo.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Sono kaj video"
+
+#: ../desktop-directories/AudioVideo.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Plurmediomenuo"
+
+#: ../desktop-directories/Development.directory.in.h:1
+msgid "Programming"
+msgstr "Programado"
+
+#: ../desktop-directories/Development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Iloj por programado"
+
+#: ../desktop-directories/Education.directory.in.h:1
+msgid "Education"
+msgstr "Edukado"
+
+#: ../desktop-directories/Game.directory.in.h:1
+msgid "Games"
+msgstr "Ludoj"
+
+#: ../desktop-directories/Game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Ludoj kaj amuzoj"
+
+#: ../desktop-directories/Graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafikoj"
+
+#: ../desktop-directories/Graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafikaj aplikaĵoj"
+
+#: ../desktop-directories/Network.directory.in.h:1
+msgid "Internet"
+msgstr "Interreto"
+
+#: ../desktop-directories/Network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programoj por retuzo, ekzemple por retlegado kaj retpoŝto"
+
+#: ../desktop-directories/Office.directory.in.h:1
+msgid "Office"
+msgstr "Oficejo"
+
+#: ../desktop-directories/Office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Oficejaj aplikaĵoj"
+
+#: ../desktop-directories/System-Tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Sistemaj iloj"
+
+#: ../desktop-directories/System-Tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Agordi kaj kontroli sistemon"
+
+#: ../desktop-directories/Utility-Accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Universala aliro"
+
+#: ../desktop-directories/Utility-Accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Agordoj por universala aliro"
+
+#: ../desktop-directories/Utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Utilaĵoj"
+
+#: ../desktop-directories/Utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Labortablaj utilaĵoj"
+
+#: ../desktop-directories/X-GNOME-Menu-Applications.directory.in.h:1
+msgid "Applications"
+msgstr "Aplikaĵoj"
+
+#: ../desktop-directories/X-GNOME-Other.directory.in.h:1
+msgid "Other"
+msgstr "Alia"
+
+#: ../desktop-directories/X-GNOME-Other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Aplikaĵoj neagordaj aliajn kategoriojn"
+
+#: ../desktop-directories/X-GNOME-Sundry.directory.in.h:1
+msgid "Sundry"
+msgstr "Diversaj"
+
+#: ../desktop-directories/X-GNOME-Utilities.directory.in.h:1
+msgid "Utilities"
+msgstr "Utilaĵoj"
+
+#: ../desktop-directories/X-GNOME-Utilities.directory.in.h:2
+msgid "Small but useful GNOME tools"
+msgstr "Malgranda sed utila GNOME iloj"
+
+#: ../desktop-directories/X-GNOME-WebApplications.directory.in.h:1
+msgid "Web Applications"
+msgstr "Retaj aplikaĵoj"
+
+#: ../desktop-directories/X-GNOME-WebApplications.directory.in.h:2
+msgid "Applications and sites saved from Web"
+msgstr "Aplikaĵoj kaj retejoj konservitaj de la reto"
+
+#~ msgid "Hardware"
+#~ msgstr "Aparataro"
+
+#~ msgid "Settings for several hardware devices"
+#~ msgstr "Agordaro por pluraj aparatoj"
+
+#~ msgid "Internet and Network"
+#~ msgstr "Interreto kaj reto"
+
+#~ msgid "Network-related settings"
+#~ msgstr "Retrilata agordaro"
+
+#~ msgid "Look and Feel"
+#~ msgstr "Aspekto kaj konduto"
+
+#~ msgid "Settings controlling the desktop appearance and behavior"
+#~ msgstr "Agordaro reganta aspekton kaj konduton de la labortablo"
+
+#~ msgid "Personal"
+#~ msgstr "Persona"
+
+#~ msgid "Personal settings"
+#~ msgstr "Persona agordaro"
+
+#~ msgid "Administration"
+#~ msgstr "Administrado"
+
+#~ msgid "Change system-wide settings (affects all users)"
+#~ msgstr "Ŝanĝi plensistemajn agordojn (aplikiĝas al ĉiuj uzantoj)"
+
+#~ msgid "Personal preferences"
+#~ msgstr "Personaj agordoj"
+
+#~ msgid "Preferences"
+#~ msgstr "Agordoj"
+
+#~ msgid "System"
+#~ msgstr "Sistemo"
+
+#~ msgid "System settings"
+#~ msgstr "Sistema agordaro"
+
+#~ msgid "Personal preferences and administration settings"
+#~ msgstr "Personaj preferoj kaj administraj agordoj"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Menua redaktilo"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Redakti menuojn"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Aplikaĵoj:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Defaŭltoj"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menuoj:"
+
+#~ msgid "Simple Menu Editor %s"
+#~ msgstr "Simpla menu-redaktilo %s"
+
+#~ msgid "Name"
+#~ msgstr "Nomo"
+
+#~ msgid "Show"
+#~ msgstr "Montri"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Ne eblas trovi hejman dosierujon: ne agordita en /etc/passwd kaj mankas "
+#~ "valoro por media variablo $HOME"
+
+#~ msgid "Action"
+#~ msgstr "Ago"
+
+#~ msgid "Action games"
+#~ msgstr "Agaj ludoj"
+
+#~ msgid "Adventure"
+#~ msgstr "Aventuro"
+
+#~ msgid "Adventure style games"
+#~ msgstr "Aventur-ludoj"
+
+#~ msgid "Arcade"
+#~ msgstr "Arkado"
+
+#~ msgid "Arcade style games"
+#~ msgstr "Arkadmanieraj ludoj"
+
+#~ msgid "Falling blocks"
+#~ msgstr "Falantaj blokoj"
+
+#~ msgid "Falling blocks games"
+#~ msgstr "Ludoj de falantaj blokoj"
+
+#~ msgid "Board"
+#~ msgstr "Tabulo"
+
+#~ msgid "Board games"
+#~ msgstr "Tabulaj ludoj"
+
+#~ msgid "Card games"
+#~ msgstr "Kart-ludoj"
+
+#~ msgid "Cards"
+#~ msgstr "Kartoj"
+
+#~ msgid "Debian"
+#~ msgstr "Debiano"
+
+#~ msgid "The Debian menu"
+#~ msgstr "La Debiana menuo"
+
+#~ msgid "Science"
+#~ msgstr "Scienco"
+
+#~ msgid "Scientific applications"
+#~ msgstr "Sciencaj programoj"
+
+#~ msgid "Games for kids"
+#~ msgstr "Infan-ludoj"
+
+#~ msgid "Kids"
+#~ msgstr "Infanoj"
+
+#~ msgid "Logic"
+#~ msgstr "Logiko"
+
+#~ msgid "Logic and puzzle games"
+#~ msgstr "Puzloj kaj logikaj ludoj"
+
+#~ msgid "Role playing"
+#~ msgstr "Rolo"
+
+#~ msgid "Role playing games"
+#~ msgstr "Rolo-ludoj"
+
+#~ msgid "Simulation"
+#~ msgstr "Ŝajnigado"
+
+#~ msgid "Simulation games"
+#~ msgstr "Ŝajnigadaj ludoj"
+
+#~ msgid "Sports"
+#~ msgstr "Sporto"
+
+#~ msgid "Sports games"
+#~ msgstr "Sportaj ludoj"
+
+#~ msgid "Strategy"
+#~ msgstr "Strategio"
+
+#~ msgid "Strategy games"
+#~ msgstr "Strategiaj ludoj"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Kontrolilo por menuaj ŝanĝoj"
+
+#~ msgid "Menu file"
+#~ msgstr "Menua dosiero"
+
+#~ msgid " <excluded>"
+#~ msgstr " <ekskludita>"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Nevalida dosiernomo]"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
